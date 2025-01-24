@@ -22,3 +22,5 @@ jobs:
         uses: gradle/gradle-build-action@v3
       - name: Build app
         run: ./gradlew assemble
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
