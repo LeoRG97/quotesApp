@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "ci/cd" ]
+    branches: [ "ci/cd", "main" ]
   pull_request:
-    branches: [ "ci/cd" ]
+    branches: [ "ci/cd", "main" ]
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: set up JDK 11
+      - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'

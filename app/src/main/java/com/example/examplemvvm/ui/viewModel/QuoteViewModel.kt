@@ -35,9 +35,7 @@ class QuoteViewModel @Inject constructor(
     fun randomQuote(){
         isLoading.postValue(true)
         val quote = getRandomQuoteUseCase()
-        if (quote != null) {
-            quoteModel.postValue(quote)
-        }
+        if (quote != null) quoteModel.postValue(quote!!)
         isLoading.postValue(false)
      //   val currentQuote = QuoteProvider.random()
      //   quoteModel.postValue(currentQuote)
