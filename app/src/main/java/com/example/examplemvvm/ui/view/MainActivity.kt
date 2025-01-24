@@ -9,7 +9,9 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.example.examplemvvm.databinding.ActivityMainBinding
 import com.example.examplemvvm.ui.viewModel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     // crear viewBinding
